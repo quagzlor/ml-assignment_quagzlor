@@ -4,7 +4,8 @@ Please implement a translation inference service that runs on Kubernetes and pro
 The translation model is `M2M100`, and the example can be found in `app/translation_example.py`.
 
 You should first fork this repository, and then send us the code or the url of your forked repository via email. 
-*Please do not submit any pull requests to this repository.*
+
+**Please do not submit any pull requests to this repository.**
 
 
 ## Delivery
