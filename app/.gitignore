@@ -3,5 +3,5 @@
 /Lib/*
 /Scripts/*
 /share/*
-pyenv.cfg
+pyvenv.cfg
 /test_input.txt
