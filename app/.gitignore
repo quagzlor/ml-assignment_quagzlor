@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+/__pycache__/*
+/Lib/*
+/Scripts/*
+/share/*
+pyenv.cfg
+/test_input.txt
