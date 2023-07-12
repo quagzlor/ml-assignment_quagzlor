@@ -1,1 +1,33 @@
 ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: m2m100-translate-api
+  labels:
+    app: m2m100-translate-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: m2m100-translate-api
+  template:
+    metadata:
+      labels:
+        app: m2m100-translate-api
+    spec:
+      containers:
+      - name: m2m100-container
+        image: m2m100_app
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 9527
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: m2m100-translate-service
+spec:
+  ports:
+  - port: 9527
+  selector:
+    app: m2m100-translate-api

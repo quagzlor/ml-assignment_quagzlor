@@ -17,7 +17,7 @@ def translation(request: Request):
 
     translator = M2M100Translator(payload.fromLang, payload.toLang)
     records = payload.records
-    print(type(records))
+    
     results = []
     for entry in payload.records:
         translated_text = translator.translate(entry.text)
